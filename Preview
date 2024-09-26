@@ -1,0 +1,41 @@
+Prediksi Harga Apartemen Menggunakan Machine Learning
+Latar Belakang
+Harga properti, khususnya apartemen, sangat dipengaruhi oleh berbagai faktor seperti lokasi, ukuran, tahun dibangun, dan fasilitas yang tersedia di sekitar. Menentukan harga yang akurat untuk apartemen sangat penting untuk pengembang properti, investor, maupun calon pembeli. Dengan menggunakan teknik Machine Learning, kita dapat memprediksi harga apartemen berdasarkan fitur-fitur tersebut, sehingga pengambilan keputusan dapat dilakukan dengan lebih baik dan akurat.
+
+Pernyataan Masalah
+Pasar properti sangat kompetitif, dan kesalahan dalam estimasi harga dapat menyebabkan kerugian yang signifikan bagi pemangku kepentingan. Tantangan utama adalah bagaimana memanfaatkan data historis yang ada untuk membangun model prediktif yang akurat guna memperkirakan harga apartemen di masa depan.
+
+Tujuan Analisis
+Tujuan dari proyek ini adalah:
+
+Memprediksi harga jual apartemen berdasarkan berbagai fitur seperti ukuran, lokasi, tahun dibangun, fasilitas terdekat, dan lainnya.
+Mengidentifikasi fitur-fitur yang paling berpengaruh dalam menentukan harga apartemen.
+Memberikan rekomendasi bisnis yang dapat membantu pengembang properti dan investor dalam pengambilan keputusan strategis.
+Data yang Digunakan
+Dataset yang digunakan dalam analisis ini berisi informasi mengenai berbagai apartemen dan fitur-fitur yang memengaruhi harga jualnya. Berikut adalah beberapa fitur penting yang tersedia dalam dataset:
+
+Size(sqf): Ukuran apartemen dalam square feet.
+YearBuilt: Tahun dibangunnya apartemen.
+N_FacilitiesNearBy(ETC): Jumlah fasilitas umum di sekitar apartemen.
+TimeToSubway: Jarak waktu tempuh berjalan kaki ke stasiun subway terdekat.
+N_SchoolNearBy: Jumlah sekolah atau universitas di dekat apartemen.
+N_Parkinglot(Basement): Jumlah tempat parkir di basement apartemen.
+Analisis Data
+Pra-pemrosesan Data: Melakukan pembersihan data, menangani data hilang, dan melakukan encoding untuk fitur-fitur kategorikal.
+Modeling: Menggunakan beberapa model Machine Learning untuk prediksi harga, seperti Random Forest dan Gradient Boosting.
+Feature Importance: Menganalisis fitur-fitur yang paling berpengaruh dalam menentukan harga apartemen.
+Evaluasi Model: Model dievaluasi menggunakan metrik seperti Mean Squared Error (MSE), Root Mean Squared Error (RMSE), dan R-squared (R²) untuk menentukan akurasi prediksi.
+Kesimpulan
+Model Random Forest menunjukkan performa terbaik dalam prediksi harga apartemen, dengan akurasi yang cukup tinggi. Fitur-fitur yang paling berpengaruh dalam prediksi adalah ukuran apartemen (Size), tahun dibangun (YearBuilt), dan fasilitas terdekat (N_FacilitiesNearBy). Model ini memberikan estimasi yang lebih akurat dalam menentukan harga jual apartemen.
+
+RMSE (Test Set): 24,000
+R-squared (Test Set): 0.85
+Rekomendasi Bisnis
+Berdasarkan hasil analisis, berikut adalah beberapa rekomendasi bisnis yang dapat diambil:
+
+Prioritaskan Pembangunan Apartemen dengan Ukuran Lebih Besar: Ukuran properti adalah faktor utama yang meningkatkan harga jual. Fokus pada pengembangan apartemen berukuran lebih besar atau beri opsi kepada pembeli untuk memilih ukuran yang lebih luas.
+Fokus pada Lokasi Strategis dengan Fasilitas Lengkap: Apartemen yang dekat dengan fasilitas umum dan transportasi publik lebih diminati dan memiliki harga jual lebih tinggi. Promosikan lokasi apartemen yang berada di dekat stasiun subway atau pusat perbelanjaan.
+Modernisasi Properti Lama: Apartemen yang lebih baru memiliki nilai jual lebih tinggi. Jika properti lebih tua, pertimbangkan untuk melakukan renovasi dan modernisasi untuk meningkatkan daya tarik dan harga jual.
+File Terkait
+notebook_analysis.ipynb: Notebook Jupyter yang berisi analisis lengkap mulai dari pra-pemrosesan data, pelatihan model, hingga evaluasi.
+data_daegu_apartment.csv: Dataset yang digunakan untuk analisis.
